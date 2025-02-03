@@ -17,7 +17,7 @@ const Contact = () => {
             </div>
 
             <motion.div
-                className="mx-60 bg-base-300 rounded-2xl shadow-lg p-8 transition-transform transform hover:scale-105 hover:shadow-2xl relative"
+                className="mx-5 md:mx-20 lg:mx-50 bg-base-300 rounded-2xl shadow-lg p-8 transition-transform transform hover:scale-105 hover:shadow-2xl relative"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
