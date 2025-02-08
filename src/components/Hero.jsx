@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="hero bg-base-200 pt-20 pb-10">
                 <div className="hero-content flex-col w-full px-20 lg:flex-row-reverse">
                     <Image
-                        src="./Images/jenilsaija.jpg"
+                        src="/Images/jenilsaija.jpg"
                         width={500}
                         height={500}
                         alt="Jenil Saija"
