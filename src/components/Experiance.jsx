@@ -4,28 +4,28 @@ import { motion } from "framer-motion";
 export default function Experience() {
   const experienceData = [
     {
-      company: "Tech Solutions Inc.",
-      title: "Full Stack Developer",
-      duration: "June 2021 - Present",
+      company: "Squad Technologies Pvt. Ltd.",
+      title: "Junior Full Stack Developer",
+      duration: "June 2024 - Present",
       description:
-        "Developed and maintained scalable web applications using the MERN stack (MongoDB, Express.js, React, Node.js). Collaborated with cross-functional teams, including product, design, and QA, to deliver high-quality products.  Implemented key features, improved performance, and ensured code maintainability.",
-      year: "2021",
+        "Developed and maintained scalable web applications using the MERN stack (MongoDB, Express.js, React, Node.js) and Nextjs. Collaborated with cross-functional teams, including product, design, and QA, to deliver high-quality products.  Implemented key features, improved performance, and ensured code maintainability.",
+      year: "2024",
     },
     {
-      company: "Creative Labs",
-      title: "Frontend Developer",
-      duration: "Jan 2020 - May 2021",
+      company: "Squad Technologies Pvt. Ltd.",
+      title: "Trainee Full Stack Developer",
+      duration: "MAR 2024 - May 2024",
       description:
-        "Focused on UI/UX design and implementation using React.js and Tailwind CSS.  Built responsive and user-friendly interfaces, optimized performance for seamless user experience, and collaborated with designers to translate mockups into functional code.",
-      year: "2020",
+        "Focused on UI/UX design and implementation using React.js and Tailwind CSS.  Built responsive and user-friendly interfaces, optimized performance for seamless user experience, and collaborated with designers to translate mockups into functional code with different database and gain very good learning and experience.",
+      year: "2024",
     },
     {
-      company: "Innovative Tech",
+      company: "Cloud Brain Technologies",
       title: "Intern Software Developer",
-      duration: "June 2019 - Dec 2019",
+      duration: "Sep 2023 - Fab 2024",
       description:
         "Gained hands-on experience in web development, assisting in the creation of web applications using Node.js and Express.js.  Contributed to project development, learned best practices, and improved my understanding of software development lifecycle.",
-      year: "2019",
+      year: "2023",
     },
   ];
   return (
@@ -45,7 +45,7 @@ export default function Experience() {
 
             return (<>
               {(index + 1) % 2 == 0 && <li key={index}>
-                {(index===experienceData.length-1 || index>0)  &&
+                {(index === experienceData.length - 1 || index > 0) &&
                   <hr className="bg-primary" />
                 }
                 <div className="timeline-end timeline-box">
@@ -68,12 +68,12 @@ export default function Experience() {
                       clipRule="evenodd" />
                   </svg>
                 </div>
-                {index!==experienceData.length-1   &&
+                {index !== experienceData.length - 1 &&
                   <hr className="bg-primary" />
                 }
               </li>}
               {(index + 1) % 2 == 1 && <li key={index}>
-                {(index===experienceData.length-1 || index>0)  &&
+                {(index === experienceData.length - 1 || index > 0) &&
                   <hr className="bg-primary" />
                 }
                 <div className="timeline-middle">
@@ -96,7 +96,7 @@ export default function Experience() {
                   <p className="text-gray-600 mb-4">{data.duration}</p>
                   <p className="text-gray-700">{data.description}</p>
                 </div>
-                {index!==experienceData.length-1  &&
+                {index !== experienceData.length - 1 &&
                   <hr className="bg-primary" />
                 }
               </li>}
