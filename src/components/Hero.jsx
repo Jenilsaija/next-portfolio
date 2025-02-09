@@ -1,9 +1,12 @@
+"use client";
 import React from 'react'
 import { MdDownloading } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const Hero = () => {
+    const router = useRouter();
     return (
         <div>
             <div className="hero bg-base-200 pt-20 pb-10">
@@ -23,9 +26,9 @@ const Hero = () => {
                         <div className='flex gap-2'>
                             <button className="btn btn-outline btn-primary text-md"><MdDownloading size={25} />
                                 Resume</button>
-                            <button className="btn btn-outline text-md"><BsPersonWorkspace
+                            <button className="btn btn-outline text-md" onClick={()=>{router.push("/projects")}}><BsPersonWorkspace
                                 size={25} />
-                                Resume</button>
+                                Work</button>
                         </div>
                     </div>
                 </div>

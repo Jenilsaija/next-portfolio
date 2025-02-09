@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
 
@@ -10,21 +11,21 @@ export default function Projects() {
       description: "A personal portfolio website built using React.js and Tailwind CSS to showcase my work and projects.",
       liveLink: "https://example.com/portfolio",
       githubLink: "https://github.com/example/portfolio",
-      image: "https://via.placeholder.com/600x400?text=Portfolio+Website", // Dummy image
+      // image: "https://via.placeholder.com/600x400?text=Portfolio+Website", // Dummy image
     },
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform with user authentication, product management, and payment processing.",
-      liveLink: "https://example.com/e-commerce",
-      githubLink: "https://github.com/example/e-commerce",
-      image: "https://via.placeholder.com/600x400?text=E-Commerce+Platform", // Dummy image
+      title: "Expense Management System",
+      description: "This is a simple Expense Management application built using the MERN stack with Material UI for styling. The app allows users to track their expenses and manage categories.",
+      // liveLink: "https://example.com/e-commerce",
+      githubLink: "https://github.com/Jenilsaija/DEMS-in-MERN-Stack-With-Material-Ui",
+      image: "/projectimg/exmsys.png", // Dummy image
     },
     {
-      title: "Blog Application",
-      description: "A blogging platform allowing users to create, edit, and share their blogs using a clean and responsive interface.",
-      liveLink: "https://example.com/blog",
-      githubLink: "https://github.com/example/blog",
-      image: "https://via.placeholder.com/600x400?text=Blog+Application", // Dummy image
+      title: "Green Grocer",
+      description: "A Grocery Seeling platform allowing users to Order grocery from plateform and admin can able to manage the orders and products from admin panel.",
+      // liveLink: "https://example.com/blog",
+      githubLink: "https://github.com/Jenilsaija/Green-Grocer",
+      image: "/projectimg/greengrocer.png", // Dummy image
     },
   ];
 
@@ -51,21 +52,23 @@ export default function Projects() {
               transition={{ delay: 0.2 * index }}
             >
               {/* Project Image */}
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover transition-transform transform hover:scale-110"
+                className="w-full h-64 object-cover transition-transform transform hover:scale-110"
+                width={900}
+                height={900}
               />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-primary mb-2">{project.title}</h3>
                 <p className="text-gray-700 mb-4">{project.description}</p>
                 <div className="flex gap-4">
-                  <a href={project.liveLink} className="btn btn-primary flex-1 flex items-center justify-center gap-2 transition-transform transform hover:scale-105">
+                  {project.liveLink && <Link href={project.liveLink} className="btn btn-primary flex-1 flex items-center justify-center gap-2 transition-transform transform hover:scale-105">
                     <FaExternalLinkAlt /> Live Link
-                  </a>
-                  <a href={project.githubLink} className="btn btn-outline flex-1 flex items-center justify-center gap-2 transition-transform transform hover:scale-105">
+                  </Link>}
+                  {project.githubLink && <Link href={project.githubLink} className="btn btn-outline flex-1 flex items-center justify-center gap-2 transition-transform transform hover:scale-105">
                     <FaGithub /> GitHub
-                  </a>
+                  </Link>}
                 </div>
               </div>
             </motion.div>

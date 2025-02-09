@@ -41,8 +41,6 @@ export default function Experience() {
 
         <ul className="timeline timeline-vertical">
           {experienceData.map((data, index) => {
-            console.log((index + 1) % 2);
-
             return (<>
               {(index + 1) % 2 == 0 && <li key={index}>
                 {(index === experienceData.length - 1 || index > 0) &&
