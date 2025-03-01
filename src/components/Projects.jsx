@@ -7,11 +7,11 @@ import { FaGithub, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
 export default function Projects() {
   const projectData = [
     {
-      title: "Portfolio Website",
-      description: "A personal portfolio website built using React.js and Tailwind CSS to showcase my work and projects.",
-      liveLink: "https://example.com/portfolio",
-      githubLink: "https://github.com/example/portfolio",
-      // image: "https://via.placeholder.com/600x400?text=Portfolio+Website", // Dummy image
+      title: "Tech Link Solving",
+      description: "It is Technical Blog website where user can read the tech related blogs and learn new things.",
+      liveLink: "https://www.techlinksolving.com/",
+      // githubLink: "https://github.com/example/portfolio",
+      image: "/projectimg/tls.png", // Dummy image
     },
     {
       title: "Expense Management System",
@@ -76,12 +76,12 @@ export default function Projects() {
         </div>
 
         {/* View More Button */}
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <Link href="/projects" className="btn btn-accent gap-5 items-center justify-center px-6 py-3 transition-colors duration-200 hover:bg-accent-focus">
             <span className="flex-1 text-center">View More Projects</span>
             <FaArrowRight />
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
