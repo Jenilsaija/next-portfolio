@@ -1,0 +1,469 @@
+[debug] [2026-05-30T10:51:05.199Z] ----------------------------------------------------------------------
+[debug] [2026-05-30T10:51:05.201Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jrsai\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-05-30T10:51:05.201Z] CLI Version:   15.19.0
+[debug] [2026-05-30T10:51:05.201Z] Platform:      win32
+[debug] [2026-05-30T10:51:05.201Z] Node Version:  v24.14.0
+[debug] [2026-05-30T10:51:05.201Z] Time:          Sat May 30 2026 16:21:05 GMT+0530 (India Standard Time)
+[debug] [2026-05-30T10:51:05.201Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-30T10:51:08.363Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-30T10:51:08.363Z] > authorizing via signed-in user (jrsaija@gmail.com)
+[debug] [2026-05-30T10:51:08.363Z] [iam] checking project jsaija-2db79 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-05-30T10:51:08.364Z] Checked if tokens are valid: true, expires at: 1780139192742
+[debug] [2026-05-30T10:51:08.364Z] Checked if tokens are valid: true, expires at: 1780139192742
+[debug] [2026-05-30T10:51:08.365Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/jsaija-2db79:testIamPermissions [none]
+[debug] [2026-05-30T10:51:08.365Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/jsaija-2db79:testIamPermissions  x-goog-user-project=jsaija-2db79
+[debug] [2026-05-30T10:51:08.365Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jsaija-2db79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-30T10:51:29.753Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/jsaija-2db79:testIamPermissions 200
+[debug] [2026-05-30T10:51:29.753Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jsaija-2db79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-30T10:51:29.754Z] Checked if tokens are valid: true, expires at: 1780139192742
+[debug] [2026-05-30T10:51:29.754Z] Checked if tokens are valid: true, expires at: 1780139192742
+[debug] [2026-05-30T10:51:29.754Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jsaija-2db79 [none]
+[debug] [2026-05-30T10:51:37.959Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jsaija-2db79 200
+[debug] [2026-05-30T10:51:37.959Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jsaija-2db79 {"projectId":"jsaija-2db79","projectNumber":"20611243185","displayName":"jsaija","name":"projects/jsaija-2db79","resources":{"hostingSite":"jsaija-2db79","realtimeDatabaseInstance":"jsaija-2db79-default-rtdb"},"state":"ACTIVE","etag":"1_b2646572-e7dc-4202-9394-1057855bc7f4"}
+[info] 
+[info] === Deploying to 'jsaija-2db79'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-05-30T10:51:37.962Z] Checked if tokens are valid: false, expires at: 1780139192742
+[debug] [2026-05-30T10:51:37.963Z] Checked if tokens are valid: false, expires at: 1780139192742
+[debug] [2026-05-30T10:51:37.963Z] > refreshing access token with scopes: []
+[debug] [2026-05-30T10:51:37.965Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-05-30T10:51:37.965Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-05-30T10:51:40.542Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-05-30T10:51:40.543Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-05-30T10:51:40.552Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsaija-2db79/sites/jsaija [none]
+[debug] [2026-05-30T10:51:42.073Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsaija-2db79/sites/jsaija 200
+[debug] [2026-05-30T10:51:42.074Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsaija-2db79/sites/jsaija {"name":"projects/jsaija-2db79/sites/jsaija","defaultUrl":"https://jsaija.web.app","appId":"1:20611243185:web:90dd4c4ad6ba9fea295690","type":"USER_SITE"}
+[debug] [2026-05-30T10:51:42.077Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:42.077Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:42.077Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions [none]
+[debug] [2026-05-30T10:51:42.077Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-05-30T10:51:43.323Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions 200
+[debug] [2026-05-30T10:51:43.324Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions {"name":"projects/20611243185/sites/jsaija/versions/7bafa490d12ee6c7","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[jsaija]: beginning deploy... 
+[info] i  hosting[jsaija]: found 48 files in ./out/ 
+[debug] [2026-05-30T10:51:43.346Z] [hosting] uploading with 200 concurrency
+[debug] [2026-05-30T10:51:43.422Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:43.422Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:43.423Z] [hosting] hash cache [b3V0] stored for 48 files
+[debug] [2026-05-30T10:51:43.424Z] [hosting][hash queue][FINAL] {"max":70,"min":1,"avg":25.45833333333334,"active":0,"complete":48,"success":48,"errored":0,"retried":0,"total":48,"elapsed":77}
+[debug] [2026-05-30T10:51:43.424Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/20611243185/sites/jsaija/versions/7bafa490d12ee6c7:populateFiles [none]
+[debug] [2026-05-30T10:51:43.424Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/20611243185/sites/jsaija/versions/7bafa490d12ee6c7:populateFiles {"files":{"/logo.png":"c824ff0aa88b149e0348a833d626c31400d463a9937bfb6b8dbb433c99048bf9","/jenilsaija.pdf":"84f684a27903f226055226db7546d7f704a59dbd19611b610ad4f392f21ace1f","/projectimg/tls.png":"174f22134857ad5c9dbb6351252c41b76931a697506303f58e661977f45d5d9c","/projectimg/greengrocer.png":"2f9ab0e2b536a2470647e3ce350f50d58adf9cc8fe02ba20c66730b5d15fe4b8","/projectimg/exmsys.png":"f5cb6ed154b0545ef44dd502f2d7810343f193cac8c7c84de0a707b83739e361","/Images/jenilsaija.jpg":"f0f8e3bfc56876f322b79d8bb2594127a97f8cb53259827ed73cc53b69e900bf","/__next._tree.txt":"6e72cfba97d8c630bc172c34a4b88e9fcf1329d62b5c5551b1cc870b95d67465","/__next.__PAGE__.txt":"62b1d5164abd6a0cd44dececc9f7ddc64147fde03578c929a59523d69cec5357","/__next._head.txt":"fd7c8efcd5baebfd6575a0f11ef3d3cdc376439949b83fcd49f2539e9f610c8b","/__next._index.txt":"70913df7e5f0799a519f5835cd874622a3da44d2cdba3242eb9b08b7b8d800fa","/__next._full.txt":"09e7eef4bc29a919f8bec91cfd56b3f89c8694691392487eff44a0fdff7b60f6","/index.txt":"09e7eef4bc29a919f8bec91cfd56b3f89c8694691392487eff44a0fdff7b60f6","/_not-found/__next._tree.txt":"fc9436085a07c69fa3a0e1375d9a0311965c3ce9ab541924edea1176ec6598bd","/_not-found/__next._not-found.txt":"ec86f9ab42bc5b5339c52fbf9046f5f001529ad6514205c0055f446c0e235580","/_not-found/__next._head.txt":"496fb9cf2cf9ccb1ea0f84b997702bcb3c7fb344d799e8e39975d3792c989c30","/404.html":"c7b5e2c5ea9db41dbf418125af9f202b07087f067cafb221d6d89335314e2cda","/_not-found/__next._index.txt":"70913df7e5f0799a519f5835cd874622a3da44d2cdba3242eb9b08b7b8d800fa","/_not-found/__next._not-found/__PAGE__.txt":"216f5bc142f0c2c1371f02def2652bb35996712915195134f4a073a85b8831d4","/_not-found/index.txt":"9e5063c0a0c6229290beb5d184594a5101a626f125d53d210a545802bdf8b566","/_next/static/mrW4VtHyH2hlG7Q6FXdti/_clientMiddlewareManifest.js":"5e57f6166b702492ab9551af57e4546546c184673a4c0432f73b96f62820f7eb","/_next/static/mrW4VtHyH2hlG7Q6FXdti/_ssgManifest.js":"dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5","/_not-found/__next._full.txt":"9e5063c0a0c6229290beb5d184594a5101a626f125d53d210a545802bdf8b566","/_next/static/mrW4VtHyH2hlG7Q6FXdti/_buildManifest.js":"dcbe1c9b9159ca21caea98e1bad364012ae284e9551375ca62b83d2811efac91","/_next/static/chunks/turbopack-0_y63u~d_c0_l.js":"d0d061c8b08228da4f425450aa3630f9ca4c5b3273eaaead8007b4ab4fc77823","/_not-found/index.html":"c7b5e2c5ea9db41dbf418125af9f202b07087f067cafb221d6d89335314e2cda","/_next/static/chunks/0zaia6i55l01..js":"0137b1f939346ec9f7126346e53c05d16c23bad09b3511e645dba41e46448b2e","/_next/static/chunks/0v.c1q97436qb.js":"28b11af41529ed5111285680b53ee51e2bb84458c651d040002877d5ab8da6d4","/_next/static/chunks/0pqt~8bl3ukh4.js":"4abd627468d725439c15c278481cf6778688788f0ae05b8c237a23e43adfb539","/projects/__next._tree.txt":"4594165687100ce948c7ade27119900918f0022b691b54dc10d0f2f1e362975c","/_next/static/chunks/0d3shmwh5_nmn.js":"0c1d636e6085992b3d74f44688c20861c3644b89675b31cbc95a5dea5de4e1b8","/_next/static/chunks/01xlw8hd842-c.js":"713a16172228e978ae302281c6866c5f8020fafd75b833b2184962f8bb8d2123","/projects/__next._full.txt":"feb2f78cbf3bb9fab0aeaa94cbfde331103848629fb7b9ebc5709484d4284ad9","/projects/__next._index.txt":"70913df7e5f0799a519f5835cd874622a3da44d2cdba3242eb9b08b7b8d800fa","/projects/index.txt":"feb2f78cbf3bb9fab0aeaa94cbfde331103848629fb7b9ebc5709484d4284ad9","/projects/__next._head.txt":"fd7c8efcd5baebfd6575a0f11ef3d3cdc376439949b83fcd49f2539e9f610c8b","/projects/__next.projects/__PAGE__.txt":"d44d1407b3182c5445dd25f7afc7b6e9398a487b801c6320605ad9dbbe590298","/projects/__next.projects.txt":"ec86f9ab42bc5b5339c52fbf9046f5f001529ad6514205c0055f446c0e235580","/projects/index.html":"59164aa0ec0dfaa348660960fe7a553c6aa0d00b71ff6033881064f587169eb9","/404/index.html":"c7b5e2c5ea9db41dbf418125af9f202b07087f067cafb221d6d89335314e2cda","/index.html":"853132b22be764f2b8f1e0bda6bb4d0085c4448db3375b68158cc3844e38c2e9","/_next/static/chunks/106resmvfmfeo.css":"4ae27f67eb4b727f29a7f24586cb68976041f24828a907cce6dcbcf5a49994d2","/projectimg/sparktac.png":"b48a15e5593974befa8d83d56af9b7802471f641f16080748d07a145b219a65f","/_next/static/chunks/03~yq9q893hmn.js":"18e28d3214eda45048d80d3925ea7627b809e69ad2e95f7f98459e9146a61c3d","/_next/static/chunks/0au83~zq0~0pf.js":"405bd9ac21702ea2049fa4f77be0033afa1b2a5757f91084c03ccef4f3668fc4","/_next/static/chunks/0m_p1bxtorv5i.js":"89d1734a07d462f5cb8c1e9776caf5edb64a6c50ea105f515bfc4405fef2a381","/projectimg/openprompt.png":"4ee8981491ffd6fee9264bb8d0fd5c02561134e019111674d2154071faeb4365","/_next/static/chunks/12k~5ce5j85eo.js":"85198ff20dfeedd3ed74bb2031d996fe7a8f0a9d5fc33382b71a7aa172ee0eb1","/_next/static/chunks/0dul3rvugrr_b.js":"68d34fcf39d3db5f1ed9150ba3e97f327a99eac0b9d281d69b9914ee34d29b95"}}
+[debug] [2026-05-30T10:51:44.247Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/20611243185/sites/jsaija/versions/7bafa490d12ee6c7:populateFiles 200
+[debug] [2026-05-30T10:51:44.247Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/20611243185/sites/jsaija/versions/7bafa490d12ee6c7:populateFiles {"uploadRequiredHashes":["fd7c8efcd5baebfd6575a0f11ef3d3cdc376439949b83fcd49f2539e9f610c8b","09e7eef4bc29a919f8bec91cfd56b3f89c8694691392487eff44a0fdff7b60f6","ec86f9ab42bc5b5339c52fbf9046f5f001529ad6514205c0055f446c0e235580","9e5063c0a0c6229290beb5d184594a5101a626f125d53d210a545802bdf8b566","4594165687100ce948c7ade27119900918f0022b691b54dc10d0f2f1e362975c","4ae27f67eb4b727f29a7f24586cb68976041f24828a907cce6dcbcf5a49994d2","496fb9cf2cf9ccb1ea0f84b997702bcb3c7fb344d799e8e39975d3792c989c30","feb2f78cbf3bb9fab0aeaa94cbfde331103848629fb7b9ebc5709484d4284ad9","c7b5e2c5ea9db41dbf418125af9f202b07087f067cafb221d6d89335314e2cda","6e72cfba97d8c630bc172c34a4b88e9fcf1329d62b5c5551b1cc870b95d67465","d44d1407b3182c5445dd25f7afc7b6e9398a487b801c6320605ad9dbbe590298","85198ff20dfeedd3ed74bb2031d996fe7a8f0a9d5fc33382b71a7aa172ee0eb1","68d34fcf39d3db5f1ed9150ba3e97f327a99eac0b9d281d69b9914ee34d29b95","59164aa0ec0dfaa348660960fe7a553c6aa0d00b71ff6033881064f587169eb9","28b11af41529ed5111285680b53ee51e2bb84458c651d040002877d5ab8da6d4","fc9436085a07c69fa3a0e1375d9a0311965c3ce9ab541924edea1176ec6598bd","0137b1f939346ec9f7126346e53c05d16c23bad09b3511e645dba41e46448b2e","b48a15e5593974befa8d83d56af9b7802471f641f16080748d07a145b219a65f","216f5bc142f0c2c1371f02def2652bb35996712915195134f4a073a85b8831d4","853132b22be764f2b8f1e0bda6bb4d0085c4448db3375b68158cc3844e38c2e9","4ee8981491ffd6fee9264bb8d0fd5c02561134e019111674d2154071faeb4365","89d1734a07d462f5cb8c1e9776caf5edb64a6c50ea105f515bfc4405fef2a381","62b1d5164abd6a0cd44dececc9f7ddc64147fde03578c929a59523d69cec5357","70913df7e5f0799a519f5835cd874622a3da44d2cdba3242eb9b08b7b8d800fa","d0d061c8b08228da4f425450aa3630f9ca4c5b3273eaaead8007b4ab4fc77823"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files"}
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.248Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.249Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.250Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.251Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.251Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.251Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.251Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:51:44.251Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/fd7c8efcd5baebfd6575a0f11ef3d3cdc376439949b83fcd49f2539e9f610c8b [none]
+[debug] [2026-05-30T10:51:44.251Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/fd7c8efcd5baebfd6575a0f11ef3d3cdc376439949b83fcd49f2539e9f610c8b [stream]
+[debug] [2026-05-30T10:51:44.252Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/09e7eef4bc29a919f8bec91cfd56b3f89c8694691392487eff44a0fdff7b60f6 [none]
+[debug] [2026-05-30T10:51:44.253Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/09e7eef4bc29a919f8bec91cfd56b3f89c8694691392487eff44a0fdff7b60f6 [stream]
+[debug] [2026-05-30T10:51:44.255Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/ec86f9ab42bc5b5339c52fbf9046f5f001529ad6514205c0055f446c0e235580 [none]
+[debug] [2026-05-30T10:51:44.255Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/ec86f9ab42bc5b5339c52fbf9046f5f001529ad6514205c0055f446c0e235580 [stream]
+[debug] [2026-05-30T10:51:44.257Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/9e5063c0a0c6229290beb5d184594a5101a626f125d53d210a545802bdf8b566 [none]
+[debug] [2026-05-30T10:51:44.257Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/9e5063c0a0c6229290beb5d184594a5101a626f125d53d210a545802bdf8b566 [stream]
+[debug] [2026-05-30T10:51:44.258Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4594165687100ce948c7ade27119900918f0022b691b54dc10d0f2f1e362975c [none]
+[debug] [2026-05-30T10:51:44.258Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4594165687100ce948c7ade27119900918f0022b691b54dc10d0f2f1e362975c [stream]
+[debug] [2026-05-30T10:51:44.259Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4ae27f67eb4b727f29a7f24586cb68976041f24828a907cce6dcbcf5a49994d2 [none]
+[debug] [2026-05-30T10:51:44.259Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4ae27f67eb4b727f29a7f24586cb68976041f24828a907cce6dcbcf5a49994d2 [stream]
+[debug] [2026-05-30T10:51:44.260Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/496fb9cf2cf9ccb1ea0f84b997702bcb3c7fb344d799e8e39975d3792c989c30 [none]
+[debug] [2026-05-30T10:51:44.260Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/496fb9cf2cf9ccb1ea0f84b997702bcb3c7fb344d799e8e39975d3792c989c30 [stream]
+[debug] [2026-05-30T10:51:44.260Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/feb2f78cbf3bb9fab0aeaa94cbfde331103848629fb7b9ebc5709484d4284ad9 [none]
+[debug] [2026-05-30T10:51:44.260Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/feb2f78cbf3bb9fab0aeaa94cbfde331103848629fb7b9ebc5709484d4284ad9 [stream]
+[debug] [2026-05-30T10:51:44.261Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/c7b5e2c5ea9db41dbf418125af9f202b07087f067cafb221d6d89335314e2cda [none]
+[debug] [2026-05-30T10:51:44.261Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/c7b5e2c5ea9db41dbf418125af9f202b07087f067cafb221d6d89335314e2cda [stream]
+[debug] [2026-05-30T10:51:44.262Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/6e72cfba97d8c630bc172c34a4b88e9fcf1329d62b5c5551b1cc870b95d67465 [none]
+[debug] [2026-05-30T10:51:44.262Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/6e72cfba97d8c630bc172c34a4b88e9fcf1329d62b5c5551b1cc870b95d67465 [stream]
+[debug] [2026-05-30T10:51:44.262Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/d44d1407b3182c5445dd25f7afc7b6e9398a487b801c6320605ad9dbbe590298 [none]
+[debug] [2026-05-30T10:51:44.262Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/d44d1407b3182c5445dd25f7afc7b6e9398a487b801c6320605ad9dbbe590298 [stream]
+[debug] [2026-05-30T10:51:44.264Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/85198ff20dfeedd3ed74bb2031d996fe7a8f0a9d5fc33382b71a7aa172ee0eb1 [none]
+[debug] [2026-05-30T10:51:44.264Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/85198ff20dfeedd3ed74bb2031d996fe7a8f0a9d5fc33382b71a7aa172ee0eb1 [stream]
+[debug] [2026-05-30T10:51:44.264Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/68d34fcf39d3db5f1ed9150ba3e97f327a99eac0b9d281d69b9914ee34d29b95 [none]
+[debug] [2026-05-30T10:51:44.264Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/68d34fcf39d3db5f1ed9150ba3e97f327a99eac0b9d281d69b9914ee34d29b95 [stream]
+[debug] [2026-05-30T10:51:44.265Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/59164aa0ec0dfaa348660960fe7a553c6aa0d00b71ff6033881064f587169eb9 [none]
+[debug] [2026-05-30T10:51:44.265Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/59164aa0ec0dfaa348660960fe7a553c6aa0d00b71ff6033881064f587169eb9 [stream]
+[debug] [2026-05-30T10:51:44.266Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/28b11af41529ed5111285680b53ee51e2bb84458c651d040002877d5ab8da6d4 [none]
+[debug] [2026-05-30T10:51:44.266Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/28b11af41529ed5111285680b53ee51e2bb84458c651d040002877d5ab8da6d4 [stream]
+[debug] [2026-05-30T10:51:44.266Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/fc9436085a07c69fa3a0e1375d9a0311965c3ce9ab541924edea1176ec6598bd [none]
+[debug] [2026-05-30T10:51:44.266Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/fc9436085a07c69fa3a0e1375d9a0311965c3ce9ab541924edea1176ec6598bd [stream]
+[debug] [2026-05-30T10:51:44.268Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/0137b1f939346ec9f7126346e53c05d16c23bad09b3511e645dba41e46448b2e [none]
+[debug] [2026-05-30T10:51:44.268Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/0137b1f939346ec9f7126346e53c05d16c23bad09b3511e645dba41e46448b2e [stream]
+[debug] [2026-05-30T10:51:44.268Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/b48a15e5593974befa8d83d56af9b7802471f641f16080748d07a145b219a65f [none]
+[debug] [2026-05-30T10:51:44.268Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/b48a15e5593974befa8d83d56af9b7802471f641f16080748d07a145b219a65f [stream]
+[debug] [2026-05-30T10:51:44.269Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/216f5bc142f0c2c1371f02def2652bb35996712915195134f4a073a85b8831d4 [none]
+[debug] [2026-05-30T10:51:44.269Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/216f5bc142f0c2c1371f02def2652bb35996712915195134f4a073a85b8831d4 [stream]
+[debug] [2026-05-30T10:51:44.272Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/853132b22be764f2b8f1e0bda6bb4d0085c4448db3375b68158cc3844e38c2e9 [none]
+[debug] [2026-05-30T10:51:44.272Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/853132b22be764f2b8f1e0bda6bb4d0085c4448db3375b68158cc3844e38c2e9 [stream]
+[debug] [2026-05-30T10:51:44.273Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4ee8981491ffd6fee9264bb8d0fd5c02561134e019111674d2154071faeb4365 [none]
+[debug] [2026-05-30T10:51:44.273Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4ee8981491ffd6fee9264bb8d0fd5c02561134e019111674d2154071faeb4365 [stream]
+[debug] [2026-05-30T10:51:44.274Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/89d1734a07d462f5cb8c1e9776caf5edb64a6c50ea105f515bfc4405fef2a381 [none]
+[debug] [2026-05-30T10:51:44.275Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/89d1734a07d462f5cb8c1e9776caf5edb64a6c50ea105f515bfc4405fef2a381 [stream]
+[debug] [2026-05-30T10:51:44.275Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/62b1d5164abd6a0cd44dececc9f7ddc64147fde03578c929a59523d69cec5357 [none]
+[debug] [2026-05-30T10:51:44.275Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/62b1d5164abd6a0cd44dececc9f7ddc64147fde03578c929a59523d69cec5357 [stream]
+[debug] [2026-05-30T10:51:44.276Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/70913df7e5f0799a519f5835cd874622a3da44d2cdba3242eb9b08b7b8d800fa [none]
+[debug] [2026-05-30T10:51:44.276Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/70913df7e5f0799a519f5835cd874622a3da44d2cdba3242eb9b08b7b8d800fa [stream]
+[debug] [2026-05-30T10:51:44.276Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/d0d061c8b08228da4f425450aa3630f9ca4c5b3273eaaead8007b4ab4fc77823 [none]
+[debug] [2026-05-30T10:51:44.277Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/d0d061c8b08228da4f425450aa3630f9ca4c5b3273eaaead8007b4ab4fc77823 [stream]
+[debug] [2026-05-30T10:51:44.277Z] [hosting][populate queue][FINAL] {"max":829,"min":829,"avg":829,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":855}
+[debug] [2026-05-30T10:51:44.277Z] [hosting] uploads queued: 25
+[info] i  hosting: uploading new files [0/25] (0%) 
+[info] i  hosting: uploading new files [0/25] (0%) 
+[info] i  hosting: uploading new files [0/25] (0%) 
+[info] i  hosting: uploading new files [0/25] (0%) 
+[debug] [2026-05-30T10:51:52.265Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/9e5063c0a0c6229290beb5d184594a5101a626f125d53d210a545802bdf8b566 200
+[debug] [2026-05-30T10:51:52.265Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/9e5063c0a0c6229290beb5d184594a5101a626f125d53d210a545802bdf8b566 [stream]
+[debug] [2026-05-30T10:51:52.323Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/feb2f78cbf3bb9fab0aeaa94cbfde331103848629fb7b9ebc5709484d4284ad9 200
+[debug] [2026-05-30T10:51:52.323Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/feb2f78cbf3bb9fab0aeaa94cbfde331103848629fb7b9ebc5709484d4284ad9 [stream]
+[debug] [2026-05-30T10:51:52.918Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/ec86f9ab42bc5b5339c52fbf9046f5f001529ad6514205c0055f446c0e235580 200
+[debug] [2026-05-30T10:51:52.919Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/ec86f9ab42bc5b5339c52fbf9046f5f001529ad6514205c0055f446c0e235580 [stream]
+[debug] [2026-05-30T10:51:52.945Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/496fb9cf2cf9ccb1ea0f84b997702bcb3c7fb344d799e8e39975d3792c989c30 200
+[debug] [2026-05-30T10:51:52.946Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/496fb9cf2cf9ccb1ea0f84b997702bcb3c7fb344d799e8e39975d3792c989c30 [stream]
+[debug] [2026-05-30T10:51:52.982Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/59164aa0ec0dfaa348660960fe7a553c6aa0d00b71ff6033881064f587169eb9 200
+[debug] [2026-05-30T10:51:52.982Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/59164aa0ec0dfaa348660960fe7a553c6aa0d00b71ff6033881064f587169eb9 [stream]
+[debug] [2026-05-30T10:51:52.985Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/c7b5e2c5ea9db41dbf418125af9f202b07087f067cafb221d6d89335314e2cda 200
+[debug] [2026-05-30T10:51:52.986Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/c7b5e2c5ea9db41dbf418125af9f202b07087f067cafb221d6d89335314e2cda [stream]
+[debug] [2026-05-30T10:51:53.006Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/6e72cfba97d8c630bc172c34a4b88e9fcf1329d62b5c5551b1cc870b95d67465 200
+[debug] [2026-05-30T10:51:53.007Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/6e72cfba97d8c630bc172c34a4b88e9fcf1329d62b5c5551b1cc870b95d67465 [stream]
+[debug] [2026-05-30T10:51:53.008Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4594165687100ce948c7ade27119900918f0022b691b54dc10d0f2f1e362975c 200
+[debug] [2026-05-30T10:51:53.008Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4594165687100ce948c7ade27119900918f0022b691b54dc10d0f2f1e362975c [stream]
+[info] i  hosting: uploading new files [8/25] (32%) 
+[debug] [2026-05-30T10:51:53.705Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/70913df7e5f0799a519f5835cd874622a3da44d2cdba3242eb9b08b7b8d800fa 200
+[debug] [2026-05-30T10:51:53.706Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/70913df7e5f0799a519f5835cd874622a3da44d2cdba3242eb9b08b7b8d800fa [stream]
+[debug] [2026-05-30T10:51:54.032Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/b48a15e5593974befa8d83d56af9b7802471f641f16080748d07a145b219a65f 200
+[debug] [2026-05-30T10:51:54.032Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/b48a15e5593974befa8d83d56af9b7802471f641f16080748d07a145b219a65f [stream]
+[debug] [2026-05-30T10:51:54.288Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/fd7c8efcd5baebfd6575a0f11ef3d3cdc376439949b83fcd49f2539e9f610c8b 200
+[debug] [2026-05-30T10:51:54.288Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/fd7c8efcd5baebfd6575a0f11ef3d3cdc376439949b83fcd49f2539e9f610c8b [stream]
+[debug] [2026-05-30T10:51:54.550Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/09e7eef4bc29a919f8bec91cfd56b3f89c8694691392487eff44a0fdff7b60f6 200
+[debug] [2026-05-30T10:51:54.550Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/09e7eef4bc29a919f8bec91cfd56b3f89c8694691392487eff44a0fdff7b60f6 [stream]
+[info] i  hosting: uploading new files [12/25] (48%) 
+[debug] [2026-05-30T10:51:56.443Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/68d34fcf39d3db5f1ed9150ba3e97f327a99eac0b9d281d69b9914ee34d29b95 200
+[debug] [2026-05-30T10:51:56.443Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/68d34fcf39d3db5f1ed9150ba3e97f327a99eac0b9d281d69b9914ee34d29b95 [stream]
+[debug] [2026-05-30T10:51:56.492Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4ae27f67eb4b727f29a7f24586cb68976041f24828a907cce6dcbcf5a49994d2 200
+[debug] [2026-05-30T10:51:56.493Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4ae27f67eb4b727f29a7f24586cb68976041f24828a907cce6dcbcf5a49994d2 [stream]
+[debug] [2026-05-30T10:51:56.703Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/62b1d5164abd6a0cd44dececc9f7ddc64147fde03578c929a59523d69cec5357 200
+[debug] [2026-05-30T10:51:56.703Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/62b1d5164abd6a0cd44dececc9f7ddc64147fde03578c929a59523d69cec5357 [stream]
+[debug] [2026-05-30T10:51:56.945Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/28b11af41529ed5111285680b53ee51e2bb84458c651d040002877d5ab8da6d4 200
+[debug] [2026-05-30T10:51:56.945Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/28b11af41529ed5111285680b53ee51e2bb84458c651d040002877d5ab8da6d4 [stream]
+[info] i  hosting: uploading new files [16/25] (64%) 
+[debug] [2026-05-30T10:51:57.416Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/d0d061c8b08228da4f425450aa3630f9ca4c5b3273eaaead8007b4ab4fc77823 200
+[debug] [2026-05-30T10:51:57.416Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/d0d061c8b08228da4f425450aa3630f9ca4c5b3273eaaead8007b4ab4fc77823 [stream]
+[debug] [2026-05-30T10:51:58.613Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/0137b1f939346ec9f7126346e53c05d16c23bad09b3511e645dba41e46448b2e 200
+[debug] [2026-05-30T10:51:58.613Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/0137b1f939346ec9f7126346e53c05d16c23bad09b3511e645dba41e46448b2e [stream]
+[debug] [2026-05-30T10:51:58.949Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/d44d1407b3182c5445dd25f7afc7b6e9398a487b801c6320605ad9dbbe590298 200
+[debug] [2026-05-30T10:51:58.949Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/d44d1407b3182c5445dd25f7afc7b6e9398a487b801c6320605ad9dbbe590298 [stream]
+[debug] [2026-05-30T10:51:59.014Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/fc9436085a07c69fa3a0e1375d9a0311965c3ce9ab541924edea1176ec6598bd 200
+[debug] [2026-05-30T10:51:59.014Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/fc9436085a07c69fa3a0e1375d9a0311965c3ce9ab541924edea1176ec6598bd [stream]
+[debug] [2026-05-30T10:51:59.035Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/216f5bc142f0c2c1371f02def2652bb35996712915195134f4a073a85b8831d4 200
+[debug] [2026-05-30T10:51:59.036Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/216f5bc142f0c2c1371f02def2652bb35996712915195134f4a073a85b8831d4 [stream]
+[info] i  hosting: uploading new files [21/25] (84%) 
+[debug] [2026-05-30T10:51:59.970Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/853132b22be764f2b8f1e0bda6bb4d0085c4448db3375b68158cc3844e38c2e9 200
+[debug] [2026-05-30T10:51:59.970Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/853132b22be764f2b8f1e0bda6bb4d0085c4448db3375b68158cc3844e38c2e9 [stream]
+[debug] [2026-05-30T10:52:00.195Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/89d1734a07d462f5cb8c1e9776caf5edb64a6c50ea105f515bfc4405fef2a381 200
+[debug] [2026-05-30T10:52:00.195Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/89d1734a07d462f5cb8c1e9776caf5edb64a6c50ea105f515bfc4405fef2a381 [stream]
+[info] i  hosting: uploading new files [23/25] (92%) 
+[info] i  hosting: uploading new files [23/25] (92%) 
+[info] i  hosting: uploading new files [23/25] (92%) 
+[info] i  hosting: uploading new files [23/25] (92%) 
+[info] i  hosting: uploading new files [23/25] (92%) 
+[info] i  hosting: uploading new files [23/25] (92%) 
+[debug] [2026-05-30T10:52:11.544Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/85198ff20dfeedd3ed74bb2031d996fe7a8f0a9d5fc33382b71a7aa172ee0eb1 200
+[debug] [2026-05-30T10:52:11.544Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/85198ff20dfeedd3ed74bb2031d996fe7a8f0a9d5fc33382b71a7aa172ee0eb1 [stream]
+[debug] [2026-05-30T10:52:12.607Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4ee8981491ffd6fee9264bb8d0fd5c02561134e019111674d2154071faeb4365 200
+[debug] [2026-05-30T10:52:12.607Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/7bafa490d12ee6c7/files/4ee8981491ffd6fee9264bb8d0fd5c02561134e019111674d2154071faeb4365 [stream]
+[debug] [2026-05-30T10:52:12.607Z] [hosting][upload queue][FINAL] {"max":28357,"min":8017,"avg":12668.48,"active":0,"complete":25,"success":25,"errored":0,"retried":0,"total":25,"elapsed":28360}
+[info] i  hosting: upload complete 
+[info] +  hosting[jsaija]: file upload complete 
+[debug] [2026-05-30T10:52:12.608Z] [hosting] deploy completed after 29282ms
+[debug] [2026-05-30T10:52:12.608Z] [
+  {
+    "config": {
+      "site": "jsaija",
+      "public": "./out/",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    "version": "projects/20611243185/sites/jsaija/versions/7bafa490d12ee6c7"
+  }
+]
+[info] i  hosting[jsaija]: finalizing version... 
+[debug] [2026-05-30T10:52:12.610Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:52:12.610Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:52:12.613Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions/7bafa490d12ee6c7 updateMask=status%2Cconfig
+[debug] [2026-05-30T10:52:12.614Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions/7bafa490d12ee6c7 {"status":"FINALIZED","config":{}}
+[debug] [2026-05-30T10:52:14.504Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions/7bafa490d12ee6c7 200
+[debug] [2026-05-30T10:52:14.504Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions/7bafa490d12ee6c7 {"name":"projects/20611243185/sites/jsaija/versions/7bafa490d12ee6c7","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-30T10:51:43.211728Z","createUser":{"email":"jrsaija@gmail.com"},"finalizeTime":"2026-05-30T10:52:14.837881Z","finalizeUser":{"email":"jrsaija@gmail.com"}}
+[debug] [2026-05-30T10:52:14.504Z] [hosting] finalized version for jsaija:[object Object]
+[info] +  hosting[jsaija]: version finalized 
+[info] i  hosting[jsaija]: releasing new version... 
+[debug] [2026-05-30T10:52:14.504Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:52:14.505Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T10:52:14.505Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/channels/live/releases versionName=projects%2F20611243185%2Fsites%2Fjsaija%2Fversions%2F7bafa490d12ee6c7
+[debug] [2026-05-30T10:52:14.505Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/channels/live/releases {}
+[debug] [2026-05-30T10:52:17.899Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/channels/live/releases 200
+[debug] [2026-05-30T10:52:17.899Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/channels/live/releases {"name":"projects/20611243185/sites/jsaija/channels/live/releases/1780138337457000","version":{"name":"projects/20611243185/sites/jsaija/versions/7bafa490d12ee6c7","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-30T10:51:43.211728Z","createUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"},"finalizeTime":"2026-05-30T10:52:14.837881Z","finalizeUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"}},"type":"DEPLOY","releaseTime":"2026-05-30T10:52:17.457Z","releaseUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"}}
+[debug] [2026-05-30T10:52:17.900Z] [hosting] release: {"name":"projects/20611243185/sites/jsaija/channels/live/releases/1780138337457000","version":{"name":"projects/20611243185/sites/jsaija/versions/7bafa490d12ee6c7","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-30T10:51:43.211728Z","createUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"},"finalizeTime":"2026-05-30T10:52:14.837881Z","finalizeUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"}},"type":"DEPLOY","releaseTime":"2026-05-30T10:52:17.457Z","releaseUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"}}
+[info] +  hosting[jsaija]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/jsaija-2db79/overview
+[info] Hosting URL: https://jsaija.web.app
+[debug] [2026-05-30T10:52:26.118Z] Error: Timed out.
+    at Timeout.<anonymous> (C:\Users\jrsai\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\firebase-tools\lib\utils.js:309:49)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-05-30T11:06:53.382Z] ----------------------------------------------------------------------
+[debug] [2026-05-30T11:06:53.384Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jrsai\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-05-30T11:06:53.385Z] CLI Version:   15.19.0
+[debug] [2026-05-30T11:06:53.385Z] Platform:      win32
+[debug] [2026-05-30T11:06:53.385Z] Node Version:  v24.14.0
+[debug] [2026-05-30T11:06:53.386Z] Time:          Sat May 30 2026 16:36:53 GMT+0530 (India Standard Time)
+[debug] [2026-05-30T11:06:53.386Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-30T11:06:56.707Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-30T11:06:56.707Z] > authorizing via signed-in user (jrsaija@gmail.com)
+[debug] [2026-05-30T11:06:56.708Z] [iam] checking project jsaija-2db79 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-05-30T11:06:56.709Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:06:56.709Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:06:56.710Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/jsaija-2db79:testIamPermissions [none]
+[debug] [2026-05-30T11:06:56.710Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/jsaija-2db79:testIamPermissions  x-goog-user-project=jsaija-2db79
+[debug] [2026-05-30T11:06:56.710Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jsaija-2db79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-30T11:06:58.277Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/jsaija-2db79:testIamPermissions 200
+[debug] [2026-05-30T11:06:58.277Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jsaija-2db79:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-30T11:06:58.278Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:06:58.278Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:06:58.278Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jsaija-2db79 [none]
+[debug] [2026-05-30T11:06:59.090Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jsaija-2db79 200
+[debug] [2026-05-30T11:06:59.090Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jsaija-2db79 {"projectId":"jsaija-2db79","projectNumber":"20611243185","displayName":"jsaija","name":"projects/jsaija-2db79","resources":{"hostingSite":"jsaija-2db79","realtimeDatabaseInstance":"jsaija-2db79-default-rtdb"},"state":"ACTIVE","etag":"1_b2646572-e7dc-4202-9394-1057855bc7f4"}
+[info] 
+[info] === Deploying to 'jsaija-2db79'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-05-30T11:06:59.094Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:06:59.094Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:06:59.094Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsaija-2db79/sites/jsaija [none]
+[debug] [2026-05-30T11:07:07.557Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsaija-2db79/sites/jsaija 200
+[debug] [2026-05-30T11:07:07.558Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/jsaija-2db79/sites/jsaija {"name":"projects/jsaija-2db79/sites/jsaija","defaultUrl":"https://jsaija.web.app","appId":"1:20611243185:web:90dd4c4ad6ba9fea295690","type":"USER_SITE"}
+[debug] [2026-05-30T11:07:07.564Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:07.565Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:07.565Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions [none]
+[debug] [2026-05-30T11:07:07.565Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-05-30T11:07:08.669Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions 200
+[debug] [2026-05-30T11:07:08.669Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions {"name":"projects/20611243185/sites/jsaija/versions/dedca0e754e19a91","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[jsaija]: beginning deploy... 
+[info] i  hosting[jsaija]: found 48 files in ./out/ 
+[debug] [2026-05-30T11:07:08.693Z] [hosting] uploading with 200 concurrency
+[debug] [2026-05-30T11:07:08.776Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:08.776Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:08.777Z] [hosting] hash cache [b3V0] stored for 48 files
+[debug] [2026-05-30T11:07:08.778Z] [hosting][hash queue][FINAL] {"max":76,"min":1,"avg":27.583333333333332,"active":0,"complete":48,"success":48,"errored":0,"retried":0,"total":48,"elapsed":83}
+[debug] [2026-05-30T11:07:08.778Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/20611243185/sites/jsaija/versions/dedca0e754e19a91:populateFiles [none]
+[debug] [2026-05-30T11:07:08.778Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/20611243185/sites/jsaija/versions/dedca0e754e19a91:populateFiles {"files":{"/logo.png":"c824ff0aa88b149e0348a833d626c31400d463a9937bfb6b8dbb433c99048bf9","/jenilsaija.pdf":"84f684a27903f226055226db7546d7f704a59dbd19611b610ad4f392f21ace1f","/projectimg/tls.png":"174f22134857ad5c9dbb6351252c41b76931a697506303f58e661977f45d5d9c","/projectimg/sparktac.png":"b48a15e5593974befa8d83d56af9b7802471f641f16080748d07a145b219a65f","/projectimg/openprompt.png":"4ee8981491ffd6fee9264bb8d0fd5c02561134e019111674d2154071faeb4365","/projectimg/greengrocer.png":"2f9ab0e2b536a2470647e3ce350f50d58adf9cc8fe02ba20c66730b5d15fe4b8","/projectimg/exmsys.png":"f5cb6ed154b0545ef44dd502f2d7810343f193cac8c7c84de0a707b83739e361","/Images/jenilsaija.jpg":"f0f8e3bfc56876f322b79d8bb2594127a97f8cb53259827ed73cc53b69e900bf","/__next._head.txt":"e120d4ec7d487dd693422b1cfd3c0176d28834d2ae2eb27d7e0be167b60cf98c","/index.txt":"5e662b0450a8e720b581a278d2c0cf0f376c83bf7ceae05914e47632a942c7d2","/__next._full.txt":"5e662b0450a8e720b581a278d2c0cf0f376c83bf7ceae05914e47632a942c7d2","/_not-found/__next._tree.txt":"c0532483ace4f1cb3c37d5bb84e6b3d2897dcd8ac0f53952e5125d31df1fbd25","/__next.__PAGE__.txt":"8e80596c5bf8e92a891e0b0124ed294c93788b34c07b9153d834744f38493989","/_not-found/__next._not-found.txt":"155959f1a19ad4cdd17b096180a12cfd516ceafdbd34c3cdaac49f39e9770a07","/_not-found/__next._index.txt":"b2e8f54a0dd4f520cc2b990fa41d3efa9c66217cae1e289b52168ce78ca18b2d","/_not-found/__next._full.txt":"93c8970a28a5dfdcd8130cbb1579244f9a682e58c92948c8ec944de3c9ad748c","/404.html":"f595061727f3740ccb0945a615b37232748092bf4b8a2766f03fb555cb05f756","/_not-found/index.txt":"93c8970a28a5dfdcd8130cbb1579244f9a682e58c92948c8ec944de3c9ad748c","/_next/static/tPsyKa9sFL_-KmGGGRLB4/_ssgManifest.js":"dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5","/_not-found/__next._head.txt":"4d297df657ce5f86313b97587d70027a0414de574ac216b39a12b4e943866f16","/_next/static/tPsyKa9sFL_-KmGGGRLB4/_clientMiddlewareManifest.js":"5e57f6166b702492ab9551af57e4546546c184673a4c0432f73b96f62820f7eb","/_not-found/__next._not-found/__PAGE__.txt":"fc86c39b619fd29e1038fa5954605bedf3aec893c30c4111fe0e0a119bf01e2a","/_not-found/index.html":"f595061727f3740ccb0945a615b37232748092bf4b8a2766f03fb555cb05f756","/__next._index.txt":"b2e8f54a0dd4f520cc2b990fa41d3efa9c66217cae1e289b52168ce78ca18b2d","/_next/static/tPsyKa9sFL_-KmGGGRLB4/_buildManifest.js":"dcbe1c9b9159ca21caea98e1bad364012ae284e9551375ca62b83d2811efac91","/__next._tree.txt":"84ee9d002205740d49910618b64644a8d90680be95831cd03e08d485639bf384","/_next/static/chunks/turbopack-0_y63u~d_c0_l.js":"d0d061c8b08228da4f425450aa3630f9ca4c5b3273eaaead8007b4ab4fc77823","/_next/static/chunks/0pqt~8bl3ukh4.js":"4abd627468d725439c15c278481cf6778688788f0ae05b8c237a23e43adfb539","/_next/static/chunks/0zaia6i55l01..js":"0137b1f939346ec9f7126346e53c05d16c23bad09b3511e645dba41e46448b2e","/_next/static/chunks/0v.c1q97436qb.js":"28b11af41529ed5111285680b53ee51e2bb84458c651d040002877d5ab8da6d4","/_next/static/chunks/0d3shmwh5_nmn.js":"0c1d636e6085992b3d74f44688c20861c3644b89675b31cbc95a5dea5de4e1b8","/projects/__next._tree.txt":"fa5da706c6be5dec7693cfdc35c671eb6c9f153bd717c23941bbe2f4e8a18aeb","/_next/static/chunks/01xlw8hd842-c.js":"713a16172228e978ae302281c6866c5f8020fafd75b833b2184962f8bb8d2123","/projects/__next._head.txt":"e120d4ec7d487dd693422b1cfd3c0176d28834d2ae2eb27d7e0be167b60cf98c","/projects/__next._index.txt":"b2e8f54a0dd4f520cc2b990fa41d3efa9c66217cae1e289b52168ce78ca18b2d","/projects/__next._full.txt":"5d29e35940941e8dd41e8a3c8d7ce2c6da1dbf7db272aed3f804c13cc03894b6","/projects/__next.projects.txt":"155959f1a19ad4cdd17b096180a12cfd516ceafdbd34c3cdaac49f39e9770a07","/projects/index.txt":"5d29e35940941e8dd41e8a3c8d7ce2c6da1dbf7db272aed3f804c13cc03894b6","/projects/index.html":"51813c3a801e2166acc8913633a488f60814dcc36efbb17ac0cf5e9a04d58b18","/projects/__next.projects/__PAGE__.txt":"e5d3c769e98f885f59385ccd3f1483396e27961fa936be6c54ace53fef808e49","/404/index.html":"f595061727f3740ccb0945a615b37232748092bf4b8a2766f03fb555cb05f756","/index.html":"81b773422b3b0e34a41cd5a806357cffd0d72a7d49da595ff2085eac2b294748","/_next/static/chunks/106resmvfmfeo.css":"4ae27f67eb4b727f29a7f24586cb68976041f24828a907cce6dcbcf5a49994d2","/_next/static/chunks/03~yq9q893hmn.js":"18e28d3214eda45048d80d3925ea7627b809e69ad2e95f7f98459e9146a61c3d","/_next/static/chunks/0au83~zq0~0pf.js":"405bd9ac21702ea2049fa4f77be0033afa1b2a5757f91084c03ccef4f3668fc4","/_next/static/chunks/0m_p1bxtorv5i.js":"89d1734a07d462f5cb8c1e9776caf5edb64a6c50ea105f515bfc4405fef2a381","/_next/static/chunks/0dp0q239fxn87.js":"6b4e28909aaa82c6e6c6a44d710935e20bc29428428dc6aee4d7dca392f2490a","/_next/static/chunks/0dul3rvugrr_b.js":"68d34fcf39d3db5f1ed9150ba3e97f327a99eac0b9d281d69b9914ee34d29b95"}}
+[debug] [2026-05-30T11:07:09.893Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/20611243185/sites/jsaija/versions/dedca0e754e19a91:populateFiles 200
+[debug] [2026-05-30T11:07:09.893Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/20611243185/sites/jsaija/versions/dedca0e754e19a91:populateFiles {"uploadRequiredHashes":["e120d4ec7d487dd693422b1cfd3c0176d28834d2ae2eb27d7e0be167b60cf98c","84ee9d002205740d49910618b64644a8d90680be95831cd03e08d485639bf384","81b773422b3b0e34a41cd5a806357cffd0d72a7d49da595ff2085eac2b294748","c0532483ace4f1cb3c37d5bb84e6b3d2897dcd8ac0f53952e5125d31df1fbd25","4d297df657ce5f86313b97587d70027a0414de574ac216b39a12b4e943866f16","f595061727f3740ccb0945a615b37232748092bf4b8a2766f03fb555cb05f756","5d29e35940941e8dd41e8a3c8d7ce2c6da1dbf7db272aed3f804c13cc03894b6","8e80596c5bf8e92a891e0b0124ed294c93788b34c07b9153d834744f38493989","93c8970a28a5dfdcd8130cbb1579244f9a682e58c92948c8ec944de3c9ad748c","e5d3c769e98f885f59385ccd3f1483396e27961fa936be6c54ace53fef808e49","155959f1a19ad4cdd17b096180a12cfd516ceafdbd34c3cdaac49f39e9770a07","5e662b0450a8e720b581a278d2c0cf0f376c83bf7ceae05914e47632a942c7d2","51813c3a801e2166acc8913633a488f60814dcc36efbb17ac0cf5e9a04d58b18","fa5da706c6be5dec7693cfdc35c671eb6c9f153bd717c23941bbe2f4e8a18aeb","fc86c39b619fd29e1038fa5954605bedf3aec893c30c4111fe0e0a119bf01e2a","b2e8f54a0dd4f520cc2b990fa41d3efa9c66217cae1e289b52168ce78ca18b2d","6b4e28909aaa82c6e6c6a44d710935e20bc29428428dc6aee4d7dca392f2490a"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files"}
+[debug] [2026-05-30T11:07:09.895Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.895Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.895Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.895Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.896Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.896Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.896Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.896Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.896Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.896Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.897Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.897Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.897Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.897Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.897Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.897Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.898Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.898Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.898Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.898Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.898Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.898Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.899Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.899Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.899Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.899Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.900Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.900Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.900Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.900Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.901Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.901Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.901Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.901Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:09.901Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/e120d4ec7d487dd693422b1cfd3c0176d28834d2ae2eb27d7e0be167b60cf98c [none]
+[debug] [2026-05-30T11:07:09.901Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/e120d4ec7d487dd693422b1cfd3c0176d28834d2ae2eb27d7e0be167b60cf98c [stream]
+[debug] [2026-05-30T11:07:09.904Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/84ee9d002205740d49910618b64644a8d90680be95831cd03e08d485639bf384 [none]
+[debug] [2026-05-30T11:07:09.904Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/84ee9d002205740d49910618b64644a8d90680be95831cd03e08d485639bf384 [stream]
+[debug] [2026-05-30T11:07:09.905Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/81b773422b3b0e34a41cd5a806357cffd0d72a7d49da595ff2085eac2b294748 [none]
+[debug] [2026-05-30T11:07:09.905Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/81b773422b3b0e34a41cd5a806357cffd0d72a7d49da595ff2085eac2b294748 [stream]
+[debug] [2026-05-30T11:07:09.906Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/c0532483ace4f1cb3c37d5bb84e6b3d2897dcd8ac0f53952e5125d31df1fbd25 [none]
+[debug] [2026-05-30T11:07:09.906Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/c0532483ace4f1cb3c37d5bb84e6b3d2897dcd8ac0f53952e5125d31df1fbd25 [stream]
+[debug] [2026-05-30T11:07:09.908Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/4d297df657ce5f86313b97587d70027a0414de574ac216b39a12b4e943866f16 [none]
+[debug] [2026-05-30T11:07:09.908Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/4d297df657ce5f86313b97587d70027a0414de574ac216b39a12b4e943866f16 [stream]
+[debug] [2026-05-30T11:07:09.909Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/f595061727f3740ccb0945a615b37232748092bf4b8a2766f03fb555cb05f756 [none]
+[debug] [2026-05-30T11:07:09.909Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/f595061727f3740ccb0945a615b37232748092bf4b8a2766f03fb555cb05f756 [stream]
+[debug] [2026-05-30T11:07:09.910Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/5d29e35940941e8dd41e8a3c8d7ce2c6da1dbf7db272aed3f804c13cc03894b6 [none]
+[debug] [2026-05-30T11:07:09.910Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/5d29e35940941e8dd41e8a3c8d7ce2c6da1dbf7db272aed3f804c13cc03894b6 [stream]
+[debug] [2026-05-30T11:07:09.911Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/8e80596c5bf8e92a891e0b0124ed294c93788b34c07b9153d834744f38493989 [none]
+[debug] [2026-05-30T11:07:09.911Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/8e80596c5bf8e92a891e0b0124ed294c93788b34c07b9153d834744f38493989 [stream]
+[debug] [2026-05-30T11:07:09.912Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/93c8970a28a5dfdcd8130cbb1579244f9a682e58c92948c8ec944de3c9ad748c [none]
+[debug] [2026-05-30T11:07:09.912Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/93c8970a28a5dfdcd8130cbb1579244f9a682e58c92948c8ec944de3c9ad748c [stream]
+[debug] [2026-05-30T11:07:09.912Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/e5d3c769e98f885f59385ccd3f1483396e27961fa936be6c54ace53fef808e49 [none]
+[debug] [2026-05-30T11:07:09.912Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/e5d3c769e98f885f59385ccd3f1483396e27961fa936be6c54ace53fef808e49 [stream]
+[debug] [2026-05-30T11:07:09.913Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/155959f1a19ad4cdd17b096180a12cfd516ceafdbd34c3cdaac49f39e9770a07 [none]
+[debug] [2026-05-30T11:07:09.913Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/155959f1a19ad4cdd17b096180a12cfd516ceafdbd34c3cdaac49f39e9770a07 [stream]
+[debug] [2026-05-30T11:07:09.914Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/5e662b0450a8e720b581a278d2c0cf0f376c83bf7ceae05914e47632a942c7d2 [none]
+[debug] [2026-05-30T11:07:09.914Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/5e662b0450a8e720b581a278d2c0cf0f376c83bf7ceae05914e47632a942c7d2 [stream]
+[debug] [2026-05-30T11:07:09.916Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/51813c3a801e2166acc8913633a488f60814dcc36efbb17ac0cf5e9a04d58b18 [none]
+[debug] [2026-05-30T11:07:09.916Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/51813c3a801e2166acc8913633a488f60814dcc36efbb17ac0cf5e9a04d58b18 [stream]
+[debug] [2026-05-30T11:07:09.918Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/fa5da706c6be5dec7693cfdc35c671eb6c9f153bd717c23941bbe2f4e8a18aeb [none]
+[debug] [2026-05-30T11:07:09.918Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/fa5da706c6be5dec7693cfdc35c671eb6c9f153bd717c23941bbe2f4e8a18aeb [stream]
+[debug] [2026-05-30T11:07:09.919Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/fc86c39b619fd29e1038fa5954605bedf3aec893c30c4111fe0e0a119bf01e2a [none]
+[debug] [2026-05-30T11:07:09.919Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/fc86c39b619fd29e1038fa5954605bedf3aec893c30c4111fe0e0a119bf01e2a [stream]
+[debug] [2026-05-30T11:07:09.920Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/b2e8f54a0dd4f520cc2b990fa41d3efa9c66217cae1e289b52168ce78ca18b2d [none]
+[debug] [2026-05-30T11:07:09.920Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/b2e8f54a0dd4f520cc2b990fa41d3efa9c66217cae1e289b52168ce78ca18b2d [stream]
+[debug] [2026-05-30T11:07:09.921Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/6b4e28909aaa82c6e6c6a44d710935e20bc29428428dc6aee4d7dca392f2490a [none]
+[debug] [2026-05-30T11:07:09.921Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/6b4e28909aaa82c6e6c6a44d710935e20bc29428428dc6aee4d7dca392f2490a [stream]
+[debug] [2026-05-30T11:07:09.922Z] [hosting][populate queue][FINAL] {"max":1125,"min":1125,"avg":1125,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1146}
+[debug] [2026-05-30T11:07:09.922Z] [hosting] uploads queued: 17
+[info] i  hosting: uploading new files [0/17] (0%) 
+[debug] [2026-05-30T11:07:12.087Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/93c8970a28a5dfdcd8130cbb1579244f9a682e58c92948c8ec944de3c9ad748c 200
+[debug] [2026-05-30T11:07:12.088Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/93c8970a28a5dfdcd8130cbb1579244f9a682e58c92948c8ec944de3c9ad748c [stream]
+[debug] [2026-05-30T11:07:12.147Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/5d29e35940941e8dd41e8a3c8d7ce2c6da1dbf7db272aed3f804c13cc03894b6 200
+[debug] [2026-05-30T11:07:12.148Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/5d29e35940941e8dd41e8a3c8d7ce2c6da1dbf7db272aed3f804c13cc03894b6 [stream]
+[debug] [2026-05-30T11:07:12.323Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/f595061727f3740ccb0945a615b37232748092bf4b8a2766f03fb555cb05f756 200
+[debug] [2026-05-30T11:07:12.323Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/f595061727f3740ccb0945a615b37232748092bf4b8a2766f03fb555cb05f756 [stream]
+[debug] [2026-05-30T11:07:12.480Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/5e662b0450a8e720b581a278d2c0cf0f376c83bf7ceae05914e47632a942c7d2 200
+[debug] [2026-05-30T11:07:12.480Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/5e662b0450a8e720b581a278d2c0cf0f376c83bf7ceae05914e47632a942c7d2 [stream]
+[debug] [2026-05-30T11:07:12.521Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/b2e8f54a0dd4f520cc2b990fa41d3efa9c66217cae1e289b52168ce78ca18b2d 200
+[debug] [2026-05-30T11:07:12.521Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/b2e8f54a0dd4f520cc2b990fa41d3efa9c66217cae1e289b52168ce78ca18b2d [stream]
+[debug] [2026-05-30T11:07:12.526Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/84ee9d002205740d49910618b64644a8d90680be95831cd03e08d485639bf384 200
+[debug] [2026-05-30T11:07:12.526Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/84ee9d002205740d49910618b64644a8d90680be95831cd03e08d485639bf384 [stream]
+[debug] [2026-05-30T11:07:12.620Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/fc86c39b619fd29e1038fa5954605bedf3aec893c30c4111fe0e0a119bf01e2a 200
+[debug] [2026-05-30T11:07:12.621Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/fc86c39b619fd29e1038fa5954605bedf3aec893c30c4111fe0e0a119bf01e2a [stream]
+[debug] [2026-05-30T11:07:12.638Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/81b773422b3b0e34a41cd5a806357cffd0d72a7d49da595ff2085eac2b294748 200
+[debug] [2026-05-30T11:07:12.638Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/81b773422b3b0e34a41cd5a806357cffd0d72a7d49da595ff2085eac2b294748 [stream]
+[debug] [2026-05-30T11:07:12.663Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/e120d4ec7d487dd693422b1cfd3c0176d28834d2ae2eb27d7e0be167b60cf98c 200
+[debug] [2026-05-30T11:07:12.663Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/e120d4ec7d487dd693422b1cfd3c0176d28834d2ae2eb27d7e0be167b60cf98c [stream]
+[info] i  hosting: uploading new files [9/17] (52%) 
+[debug] [2026-05-30T11:07:12.720Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/4d297df657ce5f86313b97587d70027a0414de574ac216b39a12b4e943866f16 200
+[debug] [2026-05-30T11:07:12.721Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/4d297df657ce5f86313b97587d70027a0414de574ac216b39a12b4e943866f16 [stream]
+[debug] [2026-05-30T11:07:12.721Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/8e80596c5bf8e92a891e0b0124ed294c93788b34c07b9153d834744f38493989 200
+[debug] [2026-05-30T11:07:12.721Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/8e80596c5bf8e92a891e0b0124ed294c93788b34c07b9153d834744f38493989 [stream]
+[debug] [2026-05-30T11:07:12.722Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/51813c3a801e2166acc8913633a488f60814dcc36efbb17ac0cf5e9a04d58b18 200
+[debug] [2026-05-30T11:07:12.722Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/51813c3a801e2166acc8913633a488f60814dcc36efbb17ac0cf5e9a04d58b18 [stream]
+[debug] [2026-05-30T11:07:12.904Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/c0532483ace4f1cb3c37d5bb84e6b3d2897dcd8ac0f53952e5125d31df1fbd25 200
+[debug] [2026-05-30T11:07:12.904Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/c0532483ace4f1cb3c37d5bb84e6b3d2897dcd8ac0f53952e5125d31df1fbd25 [stream]
+[debug] [2026-05-30T11:07:12.909Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/155959f1a19ad4cdd17b096180a12cfd516ceafdbd34c3cdaac49f39e9770a07 200
+[debug] [2026-05-30T11:07:12.910Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/155959f1a19ad4cdd17b096180a12cfd516ceafdbd34c3cdaac49f39e9770a07 [stream]
+[debug] [2026-05-30T11:07:12.949Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/e5d3c769e98f885f59385ccd3f1483396e27961fa936be6c54ace53fef808e49 200
+[debug] [2026-05-30T11:07:12.949Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/e5d3c769e98f885f59385ccd3f1483396e27961fa936be6c54ace53fef808e49 [stream]
+[debug] [2026-05-30T11:07:13.250Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/fa5da706c6be5dec7693cfdc35c671eb6c9f153bd717c23941bbe2f4e8a18aeb 200
+[debug] [2026-05-30T11:07:13.250Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/fa5da706c6be5dec7693cfdc35c671eb6c9f153bd717c23941bbe2f4e8a18aeb [stream]
+[debug] [2026-05-30T11:07:14.491Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/6b4e28909aaa82c6e6c6a44d710935e20bc29428428dc6aee4d7dca392f2490a 200
+[debug] [2026-05-30T11:07:14.491Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jsaija/versions/dedca0e754e19a91/files/6b4e28909aaa82c6e6c6a44d710935e20bc29428428dc6aee4d7dca392f2490a [stream]
+[debug] [2026-05-30T11:07:14.491Z] [hosting][upload queue][FINAL] {"max":4590,"min":2191,"avg":2848.235294117647,"active":0,"complete":17,"success":17,"errored":0,"retried":0,"total":17,"elapsed":4597}
+[info] i  hosting: upload complete 
+[info] +  hosting[jsaija]: file upload complete 
+[debug] [2026-05-30T11:07:14.492Z] [hosting] deploy completed after 5820ms
+[debug] [2026-05-30T11:07:14.492Z] [
+  {
+    "config": {
+      "site": "jsaija",
+      "public": "./out/",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    "version": "projects/20611243185/sites/jsaija/versions/dedca0e754e19a91"
+  }
+]
+[info] i  hosting[jsaija]: finalizing version... 
+[debug] [2026-05-30T11:07:14.493Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:14.494Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:14.495Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions/dedca0e754e19a91 updateMask=status%2Cconfig
+[debug] [2026-05-30T11:07:14.495Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions/dedca0e754e19a91 {"status":"FINALIZED","config":{}}
+[debug] [2026-05-30T11:07:15.706Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions/dedca0e754e19a91 200
+[debug] [2026-05-30T11:07:15.706Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/versions/dedca0e754e19a91 {"name":"projects/20611243185/sites/jsaija/versions/dedca0e754e19a91","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-30T11:07:08.648493Z","createUser":{"email":"jrsaija@gmail.com"},"finalizeTime":"2026-05-30T11:07:16.111209Z","finalizeUser":{"email":"jrsaija@gmail.com"}}
+[debug] [2026-05-30T11:07:15.706Z] [hosting] finalized version for jsaija:[object Object]
+[info] +  hosting[jsaija]: version finalized 
+[info] i  hosting[jsaija]: releasing new version... 
+[debug] [2026-05-30T11:07:15.706Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:15.707Z] Checked if tokens are valid: true, expires at: 1780141899543
+[debug] [2026-05-30T11:07:15.707Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/channels/live/releases versionName=projects%2F20611243185%2Fsites%2Fjsaija%2Fversions%2Fdedca0e754e19a91
+[debug] [2026-05-30T11:07:15.707Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/channels/live/releases {}
+[debug] [2026-05-30T11:07:19.506Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/channels/live/releases 200
+[debug] [2026-05-30T11:07:19.506Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/jsaija/channels/live/releases {"name":"projects/20611243185/sites/jsaija/channels/live/releases/1780139239246000","version":{"name":"projects/20611243185/sites/jsaija/versions/dedca0e754e19a91","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-30T11:07:08.648493Z","createUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"},"finalizeTime":"2026-05-30T11:07:16.111209Z","finalizeUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"}},"type":"DEPLOY","releaseTime":"2026-05-30T11:07:19.246Z","releaseUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"}}
+[debug] [2026-05-30T11:07:19.506Z] [hosting] release: {"name":"projects/20611243185/sites/jsaija/channels/live/releases/1780139239246000","version":{"name":"projects/20611243185/sites/jsaija/versions/dedca0e754e19a91","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-30T11:07:08.648493Z","createUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"},"finalizeTime":"2026-05-30T11:07:16.111209Z","finalizeUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"}},"type":"DEPLOY","releaseTime":"2026-05-30T11:07:19.246Z","releaseUser":{"email":"jrsaija@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIIGnvTCgyEd3l2hl5PNAZuReFs-f_FILEu3DmcvnzPEbYp-W5K"}}
+[info] +  hosting[jsaija]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/jsaija-2db79/overview
+[info] Hosting URL: https://jsaija.web.app
+[debug] [2026-05-30T11:07:25.366Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\jrsai\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\firebase-tools\lib\utils.js:309:49)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,0 +1,67 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: "#030014",
+        foreground: "#f8fafc",
+        spaceBg: "#030014",
+        cardBg: "rgba(10, 7, 24, 0.45)",
+        cardBorder: "rgba(255, 255, 255, 0.08)",
+        primary: {
+          DEFAULT: "#8B5CF6", // Glowing Violet
+          hover: "#7C3AED",
+        },
+        secondary: {
+          DEFAULT: "#06B6D4", // Glowing Cyan
+          hover: "#0891B2",
+        },
+        accent: {
+          DEFAULT: "#D946EF", // Glowing Fuchsia
+          hover: "#C084FC",
+        },
+        slateCustom: {
+          800: "#0b0721",
+          900: "#050212",
+        }
+      },
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+        'float-reverse': 'floatReverse 8s ease-in-out infinite',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'spin-slow': 'spin 20s linear infinite',
+        'spin-slower': 'spin 35s linear infinite',
+        'glow-pulse': 'glowPulse 2s infinite alternate',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-15px)' },
+        },
+        floatReverse: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(12px)' },
+        },
+        glowPulse: {
+          '0%': { boxShadow: '0 0 5px rgba(139, 92, 246, 0.2), 0 0 10px rgba(6, 182, 212, 0.1)' },
+          '100%': { boxShadow: '0 0 20px rgba(139, 92, 246, 0.6), 0 0 35px rgba(6, 182, 212, 0.4)' },
+        }
+      },
+      boxShadow: {
+        'neon-primary': '0 0 15px rgba(139, 92, 246, 0.5)',
+        'neon-secondary': '0 0 15px rgba(6, 182, 212, 0.5)',
+        'neon-accent': '0 0 15px rgba(217, 70, 239, 0.5)',
+      }
+    },
+  },
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ["dark"], // Default to dark mode theme
+  },
+};
+

@@ -1,22 +1,34 @@
-import About from '@/components/About'
-import Contact from '@/components/Contact'
-import Experience from '@/components/Experiance'
-import Hero from '@/components/Hero'
-import Projects from '@/components/Projects'
-import Skills from '@/components/Skills'
-import React from 'react'
+"use client";
+import React from "react";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experiance";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
 
-const page = () => {
+export default function Page() {
   return (
-    <div>
+    <div className="relative bg-transparent overflow-hidden">
+      
+      {/* Hero Presentation Dashboard */}
       <Hero />
-      <About />
-      <Skills/>
-      <Projects/>
-      <Experience/>
-      <Contact/>
-    </div>
-  )
-}
 
-export default page
+      {/* Services I Offer Grid */}
+      <Services />
+
+      {/* Projects Showcase with Metrics Tables */}
+      <Projects />
+
+      {/* Professional Journey Timeline */}
+      <Experience />
+
+      {/* Testimonials Review Matrix */}
+      <Testimonials />
+
+      {/* Ready to Automate CTA Cards & Email Form */}
+      <Contact />
+
+    </div>
+  );
+}

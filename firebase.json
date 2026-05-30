@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site":"jsaija",
+    "public": "./out/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
